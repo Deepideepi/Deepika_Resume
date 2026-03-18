@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        .container {
+            color: white;
+        }
+
+        .header {
+            background-color: #111a2e;
+            height: 160px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0b1220;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .main {
+            line-height: 15px;
+            width: 550px;
+            height: auto;
+        }
+
+        .name {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            border: 1px solid #d4af37;
+            border-radius: 30px;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            width: 100%;
+            margin-top: 30px;
+            padding: 13px 20px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .buttons a:hover {
+            background-color: #e6c55a;
+            color: black;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #e5e7eb;
+        }
+
+        h3 {
+            color: #d4af37;
+            margin-top: 25px;
+            letter-spacing: 1.5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+        }
+
+        .circle {
+            margin-top: 15px;
+            margin-left: 30px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 3px solid #d4af37;
+            background: linear-gradient(0deg, #d4af37 0%, #c1e878 100%);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .buttons {
+            margin-left: 30px;
+        }
+
+        .post {
+            margin-left: 15px;
+            line-height: 5px;
+            margin-bottom: 30px;
+            margin-top: 8px;
+        }
+
+        .link {
+            margin-left: 10px;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: #d4af37;
+        }
+
+        .contact {
+            letter-spacing: 0.6px;
+            border-bottom: 0.2px solid #3a382f;
+            color: #e5e7eb;
+            line-height: 30px;
+            margin-top: 15px;
+        }
+
+        hr {
+            border: 0.2px solid #3a382f;
+            width: 100%;
+            margin-top: 35px;
+        }
+
+        #extraContent {
+            display: none;
+        }
+        #extraContent1 {
+            display: none;
+        }
+        #extraContent2 {
+            display: none;
+        }
+#extraContent3 {
+            display: none;
+        }
+#extraContent4 {
+            display: none;
+        }
+#extraContent5 {
+            display: none;
+        }
+#extraContent6 {
+            display: none;
+        }
+#extraContent7 {
+            display: none;
+        }
+#extraContent8 {
+            display: none;
+        }
+#extraContent9 {
+            display: none;
+        }
+#extraContent10 {
+            display: none;
+        }
+#extraContent11{
+            display: none;
+        }
+
+
+
+        .show-more {
+            background-color: #111a2e;
+            border: 0.2px solid #3a382f;
+            margin-left: 25px;
+            border-radius: 10px;
+            width: 90%;
+            margin-top: 30px;cursor: pointer;
+        }
+
+        .container {
+            color: #e5e7eb;
+        }
+
+        p {
+            color: #e5e7eb;
+            margin-left: 25px;
+            font-size: 18px;
+            line-height: 25px;
+            font-family: 'Poppins', sans-serif;
+            text-align: justify;
+            margin-right: 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-family: 'Poppins', sans-serif;
+            margin-left: 25px;
+        }
+
+        .para {
+            color: #e5e7eb;
+            margin-left: 25px;
+            font-size: 18px;
+            line-height: 25px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .ed {
+            color: #c1a135;
+            font-size: 20px;
+        }
+
+        ul {
+            color: #e5e7eb;
+            line-height: 30px;
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .project {
+            color: #e5e7eb;
+            margin-left: 25px;
+            font-size: 18px;
+        }
+
+        .pro {
+            margin-left: 25px;
+            font-size: 17px;
+            color: #d4af37;
+            letter-spacing: 1px;
+        }
+
+        h5 {
+            color: #e5e7eb;
+            font-family: 'Poppins', sans-serif;
+            margin-left: 25px;
+            font-size: 18px;
+        }
+
+        h4 {
+            font-size: 18px;
+            color: #e5e7eb;
+            font-family: 'Poppins', sans-serif;
+            margin-left: 25px;
+        }
+
+        .lists {
+            list-style: none;
+        }
+
+        .info {
+            display: flex;
+            width: 100%;
+        }
+
+        .left {
+            width: 200px;
+            color: #e5e7eb;
+        }
+
+        .right {
+            color: #e5e7eb;
+        }
+
+        .lists {
+            line-height: 42px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="main">
+        <div class="header">
+            <div class="name">
+                <div class="circle">DV</div>
+                <div class="post">
+                    <h2>DEEPIKA V</h2>
+                    <h3>FRONTEND DEVELOPER</h3>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="index.html">← Back</a>
+                <a class="link" href="Deepika V_Resume.pdf" download>⬇ Download CV</a>
+            </div>
+            <hr>
+            <!-- contact details -->
+        </div>
+        <div class="contact"> <a href="mailto:deepi3602v@gmail.com">📧 deepi3602v@gmail.com</a> | 📞 +91 9488423021 |
+            <a href="https://github.com/Deepideepi">💻 GitHub Profile</a> |<br>
+            <a href="https://www.linkedin.com/in/deepikav3602">🔗 Linkdin Profile</a> | 📍 Salem,India
+        </div>
+        <!-- technical details -->
+        <!-- objective -->
+
+        <button class="show-more" onclick="toggleContent()">
+            <h2><span class="icon">🎯</span> Objective
+                <span>▼</span>
+            </h2>
+        </button>
+
+        <div id="extraContent" class="content">
+            <p>
+                Passionate frontend developer with a strong foundation <br>in HTML, CSS, and JavaScript
+                focused on building responsive and user-friendly web interfaces while continuously improving skills
+            </p>
+        </div>
+
+
+        <button class="show-more" onclick="toggleContent1()">
+            <h2><span class="icon">🎓</span> Education
+                <span>▼</span>
+            </h2>
+        </button>
+        <div id="extraContent1" class="content">
+            <h2 class="ed">B.Sc(Mathematics)</h2>
+            <p class="para">Periyar University,Salem | 2019-2022 | CGPA:85.2% </p>
+            <h2 class="ed">Higher Secondary(12th)-State Board</h2>
+            <p class="para">Jothi Matriculation Hr.Sec
+                School, Ammapet | 2017-2019 | 85.2% </p>
+            <h2 class="ed">SSLC(10th)-State Board</h2>
+            <p class="para">Govt.Hr.Sec School,Ammapet | 2016-2017 | 91.4%</p>
+        </div>
+
+        <button class="show-more" onclick="toggleContent11()">
+            <h2><span class="icon">📜</span>Certifications
+                <span>▼</span>
+            </h2>
+        </button>
+        <div id="extraContent11" class="content">
+            <ul>
+                <li> Python course at Besant Technologies</li>
+                <li>SQL course at Besant Technologies</li>
+                <li>Web Designing (HTML5, CSS, JavaScript & Bootstrap)</li>
+                <li>Basic Computer Application - “A” Grade</li>
+                <li>Typewriting Certificate(English) - Distinction</li>
+            </ul>
+        </div>
+        <button class="show-more" onclick="toggleContent2()">
+            <h2><span class="icon">💻</span>Technical Skills
+                <span>▼</span>
+            </h2>
+        </button>
+        <div id="extraContent2" class="content">
+            <ul>
+                <li>Web Designing</li>
+                <li>Python Programming </li>
+            </ul>
+        </div>
+
+        <button class="show-more" onclick="toggleContent3()">
+            <h2><span class="icon">⚡</span>Core Skills
+                <span>▼</span>
+            </h2>
+        </button>
+        <div id="extraContent3" class="content">
+            <ul>
+                <li> HTML5, CSS3, JavaScript</li>
+                <li>Bootstrap</li>
+                <li>React.js </li>
+                <li>GitHub Version Control</li>
+            </ul>
+        </div>
+        <button class="show-more" onclick="toggleContent4()">
+            <h2><span class="icon">🗄️</span>Database
+                <span>▼</span>
+            </h2>
+        </button>
+        <div id="extraContent4" class="content">
+            <ul>
+                <li> SQL (Oracle) Knowledge</li>
+                <li>MySQL Knowledge</li>
+            </ul>
+        </div>
+
+        <button class="show-more" onclick="toggleContent5()">
+            <h2><span class="icon">🧑‍💻</span>Design & Development
+                <span>▼</span>
+            </h2>
+        </button>
+        <div id="extraContent5" class="content">
+            <ul>
+                <li>Visual Studio Code</li>
+                <li>HTML,CSS,JavaScript</li>
+                <li>Frontend Frameworks (Angular & React.js)</li>
+                
+            </ul>
+        </div>
+        <button class="show-more" onclick="toggleContent6()">
+            <h2><span class="icon">🚀</span>Projects
+                <span>▼</span>
+            </h2>
+        </button>
+        <div id="extraContent6" class="content">
+            <h3 class="project">Project Link (Github)</h3>
+            <h5><u>Service-Based Business Website</u></h5>
+            <h5>Web Page Project</h5>
+            <a class="pro"
+                href="https://github.com/Deepideepi/HTML-CSS-Project1.git"><b>https://github.com/Deepideepi/HTML-CSS-Project1.git</b></a>
+            <h4><u>Project Discription</u></h4>
+            <p>I completed a real website project using HTML and CSS as part of my frontend learning
+                journey. Through this project, I improved my understanding of page structure, layouts, styling, and
+                responsive
+                design. The project focuses on a service-based business website and represents a professional layout for
+                a
+                painting and interior servicesbusiness. It showcases the services offered, work stages, and recent
+                project
+                highlights <br><br><b><u>Focus Area:</u></b> Layout design, styling, content structure, and UI clarity
+            </p><br>
+
+            <h5><u>Login and Registration Web Page</u></h5>
+            <h5>HTML,CSS </h5>
+            <a class="pro"
+                href="https://github.com/Deepideepi/HTML-Project1.git"><b>https://github.com/Deepideepi/HTML-Project1.git</b></a>
+            <h4><u>Project Discription</u></h4>
+            <p>This project is a simple web page created using HTML and CSS. It includes clean and responsive
+                forms for user login and registration. The design focuses on providing a neat layout and a smooth
+                experience for users</p><br>
+
+            <h5><u>Training Institute Database System</u></h5>
+            <h5>SQL </h5>
+            <a class="pro"
+                href="https://github.com/Deepideepi/SQL-PROJECT-1.git"><b>https://github.com/Deepideepi/SQL-PROJECT-1.git</b></a>
+            <h4><u>Project Discription</u></h4>
+            <p>This project represents a database system designed for a
+                training institute. It includes four main parts: Instructors, Courses,
+                Students, and Enrolments. The system helps manage information
+                in an organized way, making it easy to store and access details for
+                each area</p><br>
+
+            <h5><u>Python Real-Time Project</u></h5>
+            <h5>Python </h5>
+            <a class="pro"
+                href="https://github.com/Deepideepi/Deepi-Project.git"><b>https://github.com/Deepideepi/Deepi-Project.git</b></a>
+            <h4><u>Project Discription</u></h4>
+            <p><u>Covid Data Management System</u><br><br>
+                Developed a system in VS Code to manage patient records.
+                Patient details are added, stored, and displayed through a MySQL
+                database. The project focuses on organizing information and
+                making data retrieval simple and clear<br><br>
+                <u>ATM Machine</u><br><br>
+                Created a basic ATM simulation in VS Code where user
+                deposit and withdrawal details are collected and stored in a MySQL
+                database. The system handles user inputs and updates the stored
+                records based on the transactions<br><br>
+                <u>Hotel Management System</u><br><br>
+                Designed a booking system in VS Code that automatically
+                stores passenger details in a MySQL database. The project manages
+                booking entries and keeps the information organized for easy
+                access
+            </p><br>
+        </div>
+            <button class="show-more" onclick="toggleContent7()">
+                <h2><span class="icon">💡</span> Area Of Interests
+                    <span>▼</span>
+                </h2>
+            </button>
+
+            <div id="extraContent7" class="content">
+                <ul>
+                    <li>Frontend Developer</li>
+                    <li>Python Developer</li>
+                </ul>
+            </div>
+
+            <button class="show-more" onclick="toggleContent8()">
+                <h2><span class="icon">🌟</span> Personality Traits
+                    <span>▼</span>
+                </h2>
+            </button>
+
+            <div id="extraContent8" class="content">
+                <ul>
+                    <li>Willing to Learn</li>
+                    <li>Adaptable to New Challenges</li>
+                    <li>Team-Oriented</li>
+                </ul>
+            </div>
+            <button class="show-more" onclick="toggleContent9()">
+                <h2><span class="icon">👤</span>Personal Information
+                    <span>▼</span>
+                </h2>
+            </button>
+            <div id="extraContent9" class="content">
+                <div class="info">
+                    <div class="left">
+                        <ul class="lists">
+                            <li>Name</li>
+                            <li>Father's Name</li>
+                            <li>Mother's Name</li>
+                            <li>Date Of Birth</li>
+                            <li>Gender</li>
+                            <li>Language Known</li>
+                            <li>Address</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul class="lists">
+                            <li>: Deepika V</li>
+                            <li>: Vinayaga Moorthy S</li>
+                            <li>: Saroja V</li>
+                            <li>: 3 June 2002</li>
+                            <li>: Female</li>
+                            <li>: English & Tamil</li>
+                            <li>: 3/89 V.O.C Nagar,<br>Ammapet Colony,Salem-14</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+                <button class="show-more" onclick="toggleContent10()">
+                    <h2><span class="icon">✍️</span> Declaration
+                        <span>▼</span>
+                    </h2>
+                </button>
+
+                <div id="extraContent10" class="content">
+                    <p>
+                        I hereby declare that the above particulars are true to the best of my knowledge and belief
+
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <script>
+        function toggleContent() {
+
+            var content = document.getElementById("extraContent");
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+
+        }
+        function toggleContent1() {
+
+            var content = document.getElementById("extraContent1");
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+
+        }
+        function toggleContent2() {
+
+            var content = document.getElementById("extraContent2");
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+
+        }
+        function toggleContent3() {
+
+            var content = document.getElementById("extraContent3");
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+
+        }
+        function toggleContent4() {
+
+            var content = document.getElementById("extraContent4");
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+
+        }
+        function toggleContent5() {
+
+            var content = document.getElementById("extraContent5");
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+
+        }
+        function toggleContent6() {
+
+            var content = document.getElementById("extraContent6");
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+
+        }
+        function toggleContent7() {
+
+            var content = document.getElementById("extraContent7");
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+
+        }
+        function toggleContent8() {
+
+            var content = document.getElementById("extraContent8");
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+
+        }
+        function toggleContent9() {
+
+            var content = document.getElementById("extraContent9");
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+
+        }
+           function toggleContent10() {
+
+            var content = document.getElementById("extraContent10");
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+
+        }
+
+        function toggleContent11() {
+
+            var content = document.getElementById("extraContent11");
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
